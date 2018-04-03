@@ -10,7 +10,7 @@ import cronapi.rest.security.CronappSecurity;
 
 
 /**
- * Classe que representa a tabela ORDERSTATUS
+ * Classe que representa a tabela ORDERSTATUS Junior
  * @generated
  */
 @Entity
