@@ -1,4 +1,4 @@
-<h3>Pedido de Venda</h3>
+<h3>Pedido de Venda Edson</h3>
 
 <!-- div row para pesquisa -->
 <!--<div class="row">-->
@@ -75,22 +75,14 @@
                 <button class="btn btn-success" data-component="crn-button" ng-click="datasource.post()"><i class="glyphicon glyphicon-ok"></i></button>
                 <button class="btn btn-danger" data-component="crn-button" ng-click="datasource.cancel()"><i class="glyphicon glyphicon-remove"></i></button>
             </div>
-            <br/>
+            <br>
             <fieldset ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
 
                 <div data-component="crn-textinput" id="crn-textinput-addedDate" class="">
                     <div class="form-group">
                         <label for="textinput-addedDate" class="">Data de Criação</label>
  <!-- else for if !model.hasCronappFramework() -->
-                                <input
-                                            type="datetime"
-                                            ng-model="SalesOrder.active.addedDate"
-                                            class="form-control"
-                                            id="textinput-addedDate"
-                                            placeholder="Data de Criação"
-                                            mask="DD/MM/YYYY HH:mm:ss"
-                                            mask-placeholder=""
-                                            ng-required="false">
+                                <input type="datetime" ng-model="SalesOrder.active.addedDate" class="form-control" id="textinput-addedDate" placeholder="Data de Criação" mask="DD/MM/YYYY HH:mm:ss" mask-placeholder="" ng-required="false">
                          <!-- end if !model.hasCronappFramework() -->
                     </div>
                 </div>
@@ -99,15 +91,7 @@
                     <div class="form-group">
                         <label for="textinput-fiscalDocument" class="">Documento Fiscal</label>
  <!-- else for if !model.hasCronappFramework() -->
-                                <input
-                                            type="text"
-                                            ng-model="SalesOrder.active.fiscalDocument"
-                                            class="form-control"
-                                            id="textinput-fiscalDocument"
-                                            placeholder="Documento Fiscal"
-                                            mask=""
-                                            mask-placeholder=""
-                                            ng-required="false">
+                                <input type="text" ng-model="SalesOrder.active.fiscalDocument" class="form-control" id="textinput-fiscalDocument" placeholder="Documento Fiscal" mask="" mask-placeholder="" ng-required="false">
                          <!-- end if !model.hasCronappFramework() -->
                     </div>
                 </div>
@@ -121,7 +105,7 @@
                                     <ui-select-match class="" placeholder="Select...">
                                         {{$select.selected.name}}
                                     </ui-select-match>
-                                    <ui-select-choices  repeat="rowData in datasource.data | filter : $select.search" class="" refresh="" refresh-deplay="">
+                                    <ui-select-choices repeat="rowData in datasource.data | filter : $select.search" class="" refresh="" refresh-deplay="">
                                         <div class="" data-container="true">
                                             {{rowData.name}}
                                         </div>
@@ -178,7 +162,7 @@
                                                 </td>
                                         <td>
                                             <div>
-                                                <button class="btn btn-default btn-sm" data-component="crn-button" ng-click="datasource.startEditing(rowData)" onclick="$('#modalOrderProductGrid').modal('show');" ><i class="fa fa-edit"></i></button>
+                                                <button class="btn btn-default btn-sm" data-component="crn-button" ng-click="datasource.startEditing(rowData)" onclick="$('#modalOrderProductGrid').modal('show');"><i class="fa fa-edit"></i></button>
                                                 <button class="btn btn-default btn-sm" data-component="crn-button" ng-click="datasource.remove(rowData)"><i class="fa fa-times"></i></button>
                                             </div>
                                         </td>
@@ -186,7 +170,7 @@
                                     </tbody>
                                 </table>
                                 <div class="table-footer-controls">
-                                    <button class="btn btn-default btn-block btn-clicked" data-component="crn-button" ng-show="datasource.hasNextPage()" ng-click="datasource.nextPage()" content="{{&quot;template.crud.load_more&quot; | translate}}...">{{"template.crud.load_more" | translate}}...</button>
+                                    <button class="btn btn-default btn-block btn-clicked" data-component="crn-button" ng-show="datasource.hasNextPage()" ng-click="datasource.nextPage()">{{"template.crud.load_more" | translate}}...</button>
                                 </div>
                             </div>
                         </div>
@@ -218,16 +202,10 @@
 
 <!-- else of !model.hasCronappFramework() -->
 
-                                    <div data-component="crn-textinput"  id="crn-textinput-price" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div data-component="crn-textinput" id="crn-textinput-price" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <div class="form-group">
                                             <label for="textinput-price">Valor</label>
-                                                <input type="number"
-                                                       ng-model="OrderProductGrid.active.price" class="form-control"
-                                                       id="textinput-price"
-                                                       placeholder="Valor"
-                                                       mask=""
-                                                       mask-placeholder=""
-                                                    ng-required="false">
+                                                <input type="number" ng-model="OrderProductGrid.active.price" class="form-control" id="textinput-price" placeholder="Valor" mask="" mask-placeholder="" ng-required="false">
                                         </div>
                                     </div>
                              <!-- end if !model.hasCronappFramework() -->
