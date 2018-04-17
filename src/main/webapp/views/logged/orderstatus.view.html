@@ -1,4 +1,4 @@
-<h3>Situação Pedido de Venda</h3>
+<h3>Situação Pedido de Venda Edson</h3>
 
 <!-- div row para pesquisa -->
 <!--<div class="row">-->
@@ -67,22 +67,14 @@
                 <button class="btn btn-success" data-component="crn-button" ng-click="datasource.post()"><i class="glyphicon glyphicon-ok"></i></button>
                 <button class="btn btn-danger" data-component="crn-button" ng-click="datasource.cancel()"><i class="glyphicon glyphicon-remove"></i></button>
             </div>
-            <br/>
+            <br>
             <fieldset ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
 
                 <div data-component="crn-textinput" id="crn-textinput-name" class="">
                     <div class="form-group">
                         <label for="textinput-name" class="">Nome</label>
  <!-- else for if !model.hasCronappFramework() -->
-                                <input
-                                            type="text"
-                                            ng-model="OrderStatus.active.name"
-                                            class="form-control"
-                                            id="textinput-name"
-                                            placeholder="Nome"
-                                            mask=""
-                                            mask-placeholder=""
-                                            ng-required="false">
+                                <input type="text" ng-model="OrderStatus.active.name" class="form-control" id="textinput-name" placeholder="Nome" mask="" mask-placeholder="" ng-required="false">
                          <!-- end if !model.hasCronappFramework() -->
                     </div>
                 </div>
@@ -91,15 +83,7 @@
                     <div class="form-group">
                         <label for="textinput-active" class="">Ativo</label>
  <!-- else for if !model.hasCronappFramework() -->
-                                <input
-                                            type="checkbox"
-                                            ng-model="OrderStatus.active.active"
-                                            class="form-control"
-                                            id="textinput-active"
-                                            placeholder="Ativo"
-                                            mask=""
-                                            mask-placeholder=""
-                                            ng-required="false">
+                                <input type="checkbox" ng-model="OrderStatus.active.active" class="form-control" id="textinput-active" placeholder="Ativo" mask="" mask-placeholder="" ng-required="false">
                          <!-- end if !model.hasCronappFramework() -->
                     </div>
                 </div>
